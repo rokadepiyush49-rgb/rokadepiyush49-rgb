@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184 38" width="184" height="38" role="img" aria-label="Play live" shape-rendering="crispEdges">
+<title>Play live</title>
+<defs></defs>
+<style>
+.sm{shape-rendering:auto}
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+  @keyframes glint{0%,70%{transform:translateX(-60px)}100%{transform:translateX(224px)}}
+  .gl{animation:glint 3.4s ease-in infinite}
+  @keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(3px)}}
+  .ar{animation:nudge 1s steps(2) infinite}</style>
+  <clipPath id="bc"><rect x="0" y="0" width="180" height="34"/></clipPath>
+  <rect x="4" y="4" width="180" height="34" fill="#111111"/>
+  <rect x="0" y="0" width="180" height="34" fill="#F8C21C"/>
+  <rect x="0" y="29" width="180" height="5" fill="#000" fill-opacity="0.12"/>
+  <g clip-path="url(#bc)"><path class="gl" d="M0 0 H14 L4 34 H-10 Z" fill="#fff" fill-opacity="0.65"/></g>
+  <rect x="1.25" y="1.25" width="177.5" height="31.5" fill="none" stroke="#111111" stroke-width="2.5"/>
+  <g transform="translate(12 8) scale(1.125)"><path d="M7 0h2v1h-2zM6 1h1v1h-1zM9 1h1v1h-1zM6 2h1v1h-1zM9 2h1v1h-1zM5 3h1v1h-1zM10 3h1v1h-1zM0 4h6v1h-6zM10 4h6v1h-6zM0 5h1v1h-1zM15 5h1v1h-1zM1 6h1v1h-1zM6 6h1v1h-1zM9 6h1v1h-1zM14 6h1v1h-1zM2 7h1v1h-1zM6 7h1v1h-1zM9 7h1v1h-1zM13 7h1v1h-1zM3 8h1v1h-1zM6 8h1v1h-1zM9 8h1v1h-1zM12 8h1v1h-1zM3 9h1v1h-1zM12 9h1v1h-1zM2 10h1v1h-1zM13 10h1v1h-1zM2 11h1v1h-1zM7 11h2v1h-2zM13 11h1v1h-1zM1 12h1v1h-1zM5 12h2v1h-2zM9 12h2v1h-2zM14 12h1v1h-1zM1 13h1v1h-1zM4 13h1v1h-1zM11 13h1v1h-1zM14 13h1v1h-1zM0 14h1v1h-1zM2 14h2v1h-2zM12 14h2v1h-2zM15 14h1v1h-1zM0 15h2v1h-2zM14 15h2v1h-2z" fill="#111111"/><path d="M7 1h2v1h-2zM8 2h1v1h-1zM6 3h1v1h-1zM8 3h2v1h-2zM6 4h4v1h-4zM1 5h4v1h-4zM6 5h9v1h-9zM2 6h4v1h-4zM7 6h2v1h-2zM10 6h4v1h-4zM3 7h3v1h-3zM7 7h2v1h-2zM10 7h3v1h-3zM4 8h2v1h-2zM7 8h2v1h-2zM10 8h2v1h-2zM4 9h8v1h-8zM3 10h10v1h-10zM3 11h4v1h-4zM9 11h4v1h-4zM2 12h3v1h-3zM11 12h3v1h-3zM2 13h2v1h-2zM12 13h2v1h-2zM1 14h1v1h-1zM14 14h1v1h-1z" fill="#FFD43B"/><path d="M7 2h1v1h-1zM7 3h1v1h-1zM5 5h1v1h-1z" fill="#FFF6B8"/></g>
+  <g transform="translate(40 10) scale(2)"><path d="M0 0h4v1h-4zM6 0h1v1h-1zM13 0h3v1h-3zM18 0h1v1h-1zM22 0h1v1h-1zM30 0h1v1h-1zM37 0h3v1h-3zM42 0h1v1h-1zM46 0h1v1h-1zM48 0h5v1h-5zM0 1h1v1h-1zM4 1h1v1h-1zM6 1h1v1h-1zM12 1h1v1h-1zM16 1h1v1h-1zM18 1h1v1h-1zM22 1h1v1h-1zM30 1h1v1h-1zM38 1h1v1h-1zM42 1h1v1h-1zM46 1h1v1h-1zM48 1h1v1h-1zM0 2h1v1h-1zM4 2h1v1h-1zM6 2h1v1h-1zM12 2h1v1h-1zM16 2h1v1h-1zM19 2h1v1h-1zM21 2h1v1h-1zM30 2h1v1h-1zM38 2h1v1h-1zM42 2h1v1h-1zM46 2h1v1h-1zM48 2h1v1h-1zM0 3h4v1h-4zM6 3h1v1h-1zM12 3h5v1h-5zM20 3h1v1h-1zM30 3h1v1h-1zM38 3h1v1h-1zM42 3h1v1h-1zM46 3h1v1h-1zM48 3h4v1h-4zM0 4h1v1h-1zM6 4h1v1h-1zM12 4h1v1h-1zM16 4h1v1h-1zM20 4h1v1h-1zM30 4h1v1h-1zM38 4h1v1h-1zM42 4h1v1h-1zM46 4h1v1h-1zM48 4h1v1h-1zM0 5h1v1h-1zM6 5h1v1h-1zM12 5h1v1h-1zM16 5h1v1h-1zM20 5h1v1h-1zM30 5h1v1h-1zM38 5h1v1h-1zM43 5h1v1h-1zM45 5h1v1h-1zM48 5h1v1h-1zM0 6h1v1h-1zM6 6h5v1h-5zM12 6h1v1h-1zM16 6h1v1h-1zM20 6h1v1h-1zM30 6h5v1h-5zM37 6h3v1h-3zM44 6h1v1h-1zM48 6h5v1h-5z" fill="#111111"/></g>
+  <g class="ar"><g transform="translate(156 10) scale(2)"><path d="M2 1h1v1h-1zM3 2h1v1h-1zM0 3h5v1h-5zM3 4h1v1h-1zM2 5h1v1h-1z" fill="#E52521"/></g></g>
+</svg>

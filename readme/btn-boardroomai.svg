@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 208 38" width="208" height="38" role="img" aria-label="BoardroomAI" shape-rendering="crispEdges">
+<title>BoardroomAI</title>
+<defs></defs>
+<style>
+.sm{shape-rendering:auto}
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+  @keyframes glint{0%,70%{transform:translateX(-60px)}100%{transform:translateX(248px)}}
+  .gl{animation:glint 3.4s ease-in infinite}
+  @keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(3px)}}
+  .ar{animation:nudge 1s steps(2) infinite}</style>
+  <clipPath id="bc"><rect x="0" y="0" width="204" height="34"/></clipPath>
+  <rect x="4" y="4" width="204" height="34" fill="#111111"/>
+  <rect x="0" y="0" width="204" height="34" fill="#fff"/>
+  <rect x="0" y="29" width="204" height="5" fill="#000" fill-opacity="0.12"/>
+  <g clip-path="url(#bc)"><path class="gl" d="M0 0 H14 L4 34 H-10 Z" fill="#fff" fill-opacity="0.65"/></g>
+  <rect x="1.25" y="1.25" width="201.5" height="31.5" fill="none" stroke="#111111" stroke-width="2.5"/>
+  <g transform="translate(12 8.75) scale(1.5)"><path d="M0 0h12v1h-12zM0 1h1v1h-1zM11 1h1v1h-1zM0 2h1v1h-1zM11 2h1v1h-1zM0 3h12v1h-12zM1 4h1v1h-1zM10 4h1v1h-1zM1 5h1v1h-1zM10 5h1v1h-1zM1 6h1v1h-1zM10 6h1v1h-1zM1 7h1v1h-1zM10 7h1v1h-1zM1 8h1v1h-1zM10 8h1v1h-1zM1 9h1v1h-1zM10 9h1v1h-1zM1 10h10v1h-10z" fill="#111111"/><path d="M1 1h1v1h-1zM1 2h1v1h-1zM2 4h1v1h-1zM2 5h1v1h-1zM2 6h1v1h-1zM2 7h1v1h-1zM2 8h1v1h-1zM2 9h1v1h-1z" fill="#B8F25A"/><path d="M2 1h7v1h-7zM2 2h7v1h-7zM3 4h6v1h-6zM3 5h6v1h-6zM3 6h6v1h-6zM3 7h6v1h-6zM3 8h6v1h-6zM3 9h6v1h-6z" fill="#2DB34A"/><path d="M9 1h2v1h-2zM9 2h2v1h-2zM9 4h1v1h-1zM9 5h1v1h-1zM9 6h1v1h-1zM9 7h1v1h-1zM9 8h1v1h-1zM9 9h1v1h-1z" fill="#106B24"/></g>
+  <g transform="translate(40 10) scale(2)"><path d="M0 0h4v1h-4zM7 0h3v1h-3zM13 0h3v1h-3zM18 0h4v1h-4zM24 0h4v1h-4zM30 0h4v1h-4zM37 0h3v1h-3zM43 0h3v1h-3zM48 0h1v1h-1zM52 0h1v1h-1zM55 0h3v1h-3zM61 0h3v1h-3zM0 1h1v1h-1zM4 1h1v1h-1zM6 1h1v1h-1zM10 1h1v1h-1zM12 1h1v1h-1zM16 1h1v1h-1zM18 1h1v1h-1zM22 1h1v1h-1zM24 1h1v1h-1zM28 1h1v1h-1zM30 1h1v1h-1zM34 1h1v1h-1zM36 1h1v1h-1zM40 1h1v1h-1zM42 1h1v1h-1zM46 1h1v1h-1zM48 1h2v1h-2zM51 1h2v1h-2zM54 1h1v1h-1zM58 1h1v1h-1zM62 1h1v1h-1zM0 2h1v1h-1zM4 2h1v1h-1zM6 2h1v1h-1zM10 2h1v1h-1zM12 2h1v1h-1zM16 2h1v1h-1zM18 2h1v1h-1zM22 2h1v1h-1zM24 2h1v1h-1zM28 2h1v1h-1zM30 2h1v1h-1zM34 2h1v1h-1zM36 2h1v1h-1zM40 2h1v1h-1zM42 2h1v1h-1zM46 2h1v1h-1zM48 2h1v1h-1zM50 2h1v1h-1zM52 2h1v1h-1zM54 2h1v1h-1zM58 2h1v1h-1zM62 2h1v1h-1zM0 3h4v1h-4zM6 3h1v1h-1zM10 3h1v1h-1zM12 3h5v1h-5zM18 3h4v1h-4zM24 3h1v1h-1zM28 3h1v1h-1zM30 3h4v1h-4zM36 3h1v1h-1zM40 3h1v1h-1zM42 3h1v1h-1zM46 3h1v1h-1zM48 3h1v1h-1zM50 3h1v1h-1zM52 3h1v1h-1zM54 3h5v1h-5zM62 3h1v1h-1zM0 4h1v1h-1zM4 4h1v1h-1zM6 4h1v1h-1zM10 4h1v1h-1zM12 4h1v1h-1zM16 4h1v1h-1zM18 4h1v1h-1zM20 4h1v1h-1zM24 4h1v1h-1zM28 4h1v1h-1zM30 4h1v1h-1zM32 4h1v1h-1zM36 4h1v1h-1zM40 4h1v1h-1zM42 4h1v1h-1zM46 4h1v1h-1zM48 4h1v1h-1zM52 4h1v1h-1zM54 4h1v1h-1zM58 4h1v1h-1zM62 4h1v1h-1zM0 5h1v1h-1zM4 5h1v1h-1zM6 5h1v1h-1zM10 5h1v1h-1zM12 5h1v1h-1zM16 5h1v1h-1zM18 5h1v1h-1zM21 5h1v1h-1zM24 5h1v1h-1zM28 5h1v1h-1zM30 5h1v1h-1zM33 5h1v1h-1zM36 5h1v1h-1zM40 5h1v1h-1zM42 5h1v1h-1zM46 5h1v1h-1zM48 5h1v1h-1zM52 5h1v1h-1zM54 5h1v1h-1zM58 5h1v1h-1zM62 5h1v1h-1zM0 6h4v1h-4zM7 6h3v1h-3zM12 6h1v1h-1zM16 6h1v1h-1zM18 6h1v1h-1zM22 6h1v1h-1zM24 6h4v1h-4zM30 6h1v1h-1zM34 6h1v1h-1zM37 6h3v1h-3zM43 6h3v1h-3zM48 6h1v1h-1zM52 6h1v1h-1zM54 6h1v1h-1zM58 6h1v1h-1zM61 6h3v1h-3z" fill="#111111"/></g>
+  <g class="ar"><g transform="translate(180 10) scale(2)"><path d="M2 1h1v1h-1zM3 2h1v1h-1zM0 3h5v1h-5zM3 4h1v1h-1zM2 5h1v1h-1z" fill="#E52521"/></g></g>
+</svg>

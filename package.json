@@ -1,0 +1,16 @@
+{
+  "name": "rokadepiyush49-rgb",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Mario-themed GitHub profile: every README image is an animated SVG generated from data/",
+  "scripts": {
+    "assets": "node scripts/generate-assets.mjs",
+    "sync:contributions": "node scripts/sync-contributions.mjs",
+    "sync": "npm run sync:contributions && npm run assets",
+    "preview": "python3 -m http.server 4321"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
