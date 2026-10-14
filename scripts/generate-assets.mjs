@@ -436,10 +436,11 @@ function contact() {
     })
     .join('');
 
-  const ms = 1.4;
-  const msz = spriteSize(S.MARIO_HD, ms);
-  const mx = 44;
-  const my = h - 6 - 34 - msz.h + 6;
+  const ms = 1.12;
+  const msz = spriteSize(S.MARIO_MAIN, ms);
+  const mx = 34;
+  const my = h - 6 - 34 - msz.h + 5;
+  const [pvx, pvy] = S.MAIN_PIVOT.map((v, i) => R((i ? my : mx) + v * ms));
   const shout = profile.contact.shout;
   const bw = pxWidth(shout, 3, { bold: true }) + 36;
   const bx = 150;
@@ -448,6 +449,8 @@ function contact() {
   const css = `${TILE_CSS}
   @keyframes jump{0%,40%,100%{transform:translateY(0)}55%{transform:translateY(-30px)}70%{transform:translateY(0)}78%{transform:translateY(-8px)}86%{transform:translateY(0)}}
   .jump{animation:jump 1.8s cubic-bezier(.3,.7,.4,1) infinite}
+  @keyframes pump{0%,30%,100%{transform:rotate(0)}40%{transform:rotate(-10deg)}50%{transform:rotate(3deg)}60%{transform:rotate(-6deg)}70%{transform:rotate(0)}}
+  .pump{animation:pump 1.8s cubic-bezier(.3,.7,.4,1) infinite}
   @keyframes bubblePop{0%{transform:scale(.8) rotate(-4deg)}60%{transform:scale(1.06) rotate(1.5deg)}100%{transform:scale(1) rotate(0)}}
   .bubble{transform-box:fill-box;transform-origin:10% 100%;animation:bubblePop .7s cubic-bezier(.3,1.3,.4,1) backwards}
   @keyframes wig{0%,100%{transform:rotate(0)}50%{transform:rotate(-2deg)}}
@@ -461,7 +464,10 @@ function contact() {
     <rect x="0" y="${h - 6 - 34}" width="380" height="40" fill="url(#brickS)"/>
     <rect x="0" y="${h - 6 - 34}" width="380" height="3" fill="${P.ink}"/>
   </g>
-  <g class="jump">${sprite(S.MARIO_HD, S.HD_PAL, { x: mx, y: my, s: ms })}</g>
+  <g class="jump">
+    <g class="pump" style="transform-origin:${pvx}px ${pvy}px">${sprite(S.MARIO_MAIN_ARM, S.MAIN_PAL, { x: mx, y: my, s: ms })}</g>
+    ${sprite(S.MARIO_MAIN_BODY, S.MAIN_PAL, { x: mx, y: my, s: ms })}
+  </g>
   <g class="bubble"><g class="wig">
     <path d="M${bx + 10} ${by + 50} L${bx - 22} ${by + 74} L${bx + 34} ${by + 50} Z" fill="#fff" stroke="${P.ink}" stroke-width="3" class="sm"/>
     <path d="${notch(bx, by, bw, 54, 8)}" fill="#fff"/>

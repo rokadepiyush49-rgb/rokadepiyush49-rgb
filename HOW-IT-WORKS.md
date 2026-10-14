@@ -61,9 +61,14 @@ control is its own small badge image wrapped in a Markdown link.
 - Fonts: GitHub won't load web fonts inside SVGs, so every heading uses the
   hand-made 5×7 bitmap font in `pixel.mjs`. Body copy uses the system mono stack.
 - Small sprites are typed as character grids (`sprites.mjs`).
-- The big hero Mario is traced from reference art with `rasterHD`: shapes in
-  the reference's own pixel coordinates, sampled onto a fine grid with four
-  tones and inked outlines per part.
+- The main character (hero + contact) is traced from reference art by
+  `tools/trace_sprite.py`: it removes the background, fits the best pixel
+  grid, samples each cell, merges near-duplicate colours and despeckles, then
+  writes `scripts/lib/mario-main.mjs`. `sprites.mjs` splits that grid into the
+  raised arm (it pumps a thumbs-up about the shoulder), the body, and blinking
+  eyelids. To swap the art: put a PNG at `assets/mario-main.png` (git-ignored)
+  and run `python3 tools/trace_sprite.py assets/mario-main.png --cell 3.6`
+  (needs Pillow), then `npm run assets`.
 - The generator is deterministic (seeded RNG, no `Date.now()`), so re-running
   it only produces a diff when the data changed.
 

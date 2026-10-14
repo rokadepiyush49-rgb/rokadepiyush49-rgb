@@ -51,13 +51,14 @@ export function hero({ profile, contrib, total }) {
     ${sprite(bankGrid, bankPal, { x: 0, y: gy - 92, s: 4 })}${sprite(bankGrid, bankPal, { x: 880, y: gy - 92, s: 4 })}
   </g>`;
 
-  /* big mario (HD, traced from the reference art) */
-  const ms = 2.6;
-  const msz = spriteSize(S.MARIO_HD, ms);
-  const mx = 664;
-  const my = gy - msz.h + 10;
+  /* main character, traced from the reference art (tools/trace_sprite.py) */
+  const ms = 2;
+  const msz = spriteSize(S.MARIO_MAIN, ms);
+  const mx = 662;
+  const my = gy - msz.h + 6;
+  const [pvx, pvy] = S.MAIN_PIVOT.map((v, i) => R((i ? my : mx) + v * ms));
 
-  const q = bumpBlock({ id: 'q1', x: 818, y: 168, s: 3, period: 3.8, at: 0.1, score: '+100' });
+  const q = bumpBlock({ id: 'q1', x: 820, y: 112, s: 3, period: 3.8, at: 0.1, score: '+100', pop: 34 });
 
   /* left column */
   const kicker = id.kicker.toUpperCase();
@@ -87,6 +88,8 @@ export function hero({ profile, contrib, total }) {
   .mBob{animation:bob 1.2s steps(1) infinite}
   @keyframes hop{0%,82%,100%{transform:translateY(0)}87%{transform:translateY(-38px)}92%{transform:translateY(0)}95%{transform:translateY(-8px)}98%{transform:translateY(0)}}
   .mHop{animation:hop 7s cubic-bezier(.3,.7,.4,1) infinite}
+  @keyframes pump{0%,52%,100%{transform:rotate(0)}58%{transform:rotate(-9deg)}64%{transform:rotate(2deg)}70%{transform:rotate(-6deg)}76%{transform:rotate(0)}}
+  .pump{animation:pump 3.4s cubic-bezier(.3,.7,.4,1) infinite}
   @keyframes blink{0%,91%{opacity:0}92%,95%{opacity:1}96%,100%{opacity:0}}
   .lid{opacity:0;animation:blink 4.6s steps(1) infinite}
   @keyframes sheen{0%,100%{opacity:.35}50%{opacity:.8}}
@@ -119,15 +122,16 @@ export function hero({ profile, contrib, total }) {
     ${driftingCloud({ x: 420, y: 74, s: 3, kind: 0, travel: 1000, dur: 70 })}
     ${driftingCloud({ x: 760, y: 104, s: 2, kind: 1, travel: 960, dur: 52, delay: 10 })}
     ${driftingCloud({ x: 180, y: 128, s: 2, kind: 2, travel: 1100, dur: 90, delay: 30 })}
-    <ellipse class="glow sm" cx="${mx + msz.w / 2}" cy="${my + msz.h * 0.42}" rx="140" ry="125" fill="url(#spot)"/>
+    <ellipse class="glow sm" cx="${mx + msz.w / 2 + 6}" cy="${my + msz.h * 0.45}" rx="140" ry="128" fill="url(#spot)"/>
     ${bush(540, gy - 40, 3)}
     ${bush(770, gy - 44, 3, true)}
     ${ground('h', 0, gy, W, H - gy)}
-    ${coin(686, 78, 2, 0)}${coin(718, 72, 2, 0.15)}${coin(750, 78, 2, 0.3)}
+    ${coin(690, 80, 2, 0)}${coin(722, 74, 2, 0.15)}${coin(754, 80, 2, 0.3)}
     ${q.body}
     <g class="mHop"><g class="mBob">
-      ${sprite(S.MARIO_HD, S.HD_PAL, { x: mx, y: my, s: ms })}
-      <g class="lid">${sprite(S.MARIO_HD_LIDS, S.HD_PAL, { x: mx, y: my, s: ms })}</g>
+      <g class="pump" style="transform-origin:${pvx}px ${pvy}px">${sprite(S.MARIO_MAIN_ARM, S.MAIN_PAL, { x: mx, y: my, s: ms })}</g>
+      ${sprite(S.MARIO_MAIN_BODY, S.MAIN_PAL, { x: mx, y: my, s: ms })}
+      <g class="lid">${sprite(S.MARIO_MAIN_LIDS, S.MAIN_PAL, { x: mx, y: my, s: ms })}</g>
     </g></g>
 
     <g class="r1">
